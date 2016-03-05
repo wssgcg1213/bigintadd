@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+const tool = {
+  /**
+   * judgeNegative
+   * 判断负数, 如果是返回true
+   */
+  judgeNegative (n) {
+    n = (n + '').trim();
+    return n[0] === '-';
+  },
+
+  /**
+   * 辅助函数 重复n次字符串v
+   */
+  repeat (n, v) {
+    return Array.from({ length: n }, () => '' + v).join('');
+  },
+
+
+  symbolInt1: 'int1',
+  symbolInt2: 'int2'
+};
+
+
+function minus (int1, int2) {
+    let flag = ''; // 符号位, 默认空
+    let absoulteBigger, negativeInt; // 哪一个绝对值更大, 哪一个为负
+    let absInt1 = '' + int1, 
+        absInt2 = '' + int2; // 绝对值
+    // 去符号位
+    if (tool.judgeNegative(int1)) {
+      absInt1 = int1.slice(1);
+      negativeInt = tool.symbolInt1;
+    }
+    if (tool.judgeNegative(int2)) {
+      absInt2 = int2.slice(1);
+      negativeInt = tool.symbolInt2;
+    }
+
+    if (absInt1 === absInt2) {
+      return '0'; // 绝对值一样, 符号相反, 0
+    } else if (absInt1.length > absInt2.length) {
+      absoulteBigger = tool.symbolInt1;
+    } else if (absInt2.length > absInt1.length) {
+      absoulteBigger = tool.symbolInt2;
+    } else { // 两个数一样长
+      for (let i = 0; i < absInt1.length; i++) {
+        if (parseInt(absInt1[i]) > parseInt(absInt2[i])) {
+          absoulteBigger = tool.symbolInt1;
+          break;
+        } else if (parseInt(absInt1[i]) < parseInt(absInt2[i])) {
+          absoulteBigger = tool.symbolInt2;
+          break;
+        }
+      }
+
+      if (undefined === absoulteBigger) { //如果到这一步都没有判断出大小，则相等，返回0
+        return '0';
+      }
+    }
+
+    if (absoulteBigger === tool.symbolInt2) { // 目标: int1 > int2
+      [absInt1, absInt2] = [absInt2, absInt1]; // 一句话交换
+      if (negativeInt === tool.symbolInt2) {
+        flag = '-';
+      }
+    } else if (negativeInt === tool.symbolInt1) {
+      flag = '-';
+    }
+
+    let s = 0; // 退位标志
+    let rInt1 = absInt1.split('').reverse(),
+        rInt2 = absInt2.split('').reverse();
+    const len = rInt1.length > rInt2.length ? rInt1.length : rInt2.length;
+    let result = [];
+    let overflow;
+
+    for ( let i = 0; i < len; i ++ ) {
+      overflow = (parseInt(rInt1[i]) || 0) - (parseInt(rInt2[i]) || 0) - s;
+      if (overflow < 0) {
+        s = 1;
+        overflow += 10;
+      } else {
+        s = 0;
+      }
+      result.push(overflow);
+    }
+
+    if (s === 1) {
+      result.pop();
+    }
+    return flag + result.reverse().join('').replace(/^(0*)/, '');
+  }
+  </script>
+</body>
+</html>
