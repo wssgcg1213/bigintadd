@@ -27,8 +27,8 @@ src/solution2.js
 
 [jsperf](http://jsperf.com/bigint-zeroling) 
 
-Chrome50下方案1的效率高的多, 具体原因还未分析.
-
+Chrome50下方案1的效率高的多, 具体原因还未分析.  
+![jsperf pic](https://dn-redrock.qbox.me/pics/QQ20160306-0.png)
 
 
 mocha:
