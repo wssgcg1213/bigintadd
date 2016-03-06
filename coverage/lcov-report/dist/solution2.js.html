@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for dist/solution2.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">dist/</a> solution2.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">96.43% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>54/56</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">97.73% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>43/44</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">97.67% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>42/43</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-yes">70×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">70×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-yes">48×</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-yes">26×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">22×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">18×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">16×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">12×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">10×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">'use strict';exports.__esModule = true;var _from = require('babel-runtime/core-js/array/from');var _from2 = _interopRequireDefault(_from);exports.default = 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+wrapper;function _interopRequireDefault(obj) {return obj &amp;&amp; obj.__esModule ? obj : <span class="branch-1 cbranch-no" title="branch not covered" >{ default: obj };</span>} /**
+                                                                                                       * eg: 888 - 99 = 789
+                                                                                                       *
+                                                                                                       * 8 + -0  8
+                                                                                                       * 8 + -9  -1
+                                                                                                       * 8 + -9  -1
+                                                                                                       * 
+                                                                                                       * 8 -1 -1
+                                                                                                       * 8 -2 9
+                                                                                                       * 7 8 9
+                                                                                                       * 
+                                                                                                       */function wrapper(int1, int2) {var _negative = [isNegative(int1), isNegative(int2)];var absInts = [_negative[0] ? int1.slice(1) : int1, _negative[1] ? int2.slice(1) : int2]; // 1正1负且结果为负的case 需要特殊处理
+  if (_negative[0] + _negative[1] == 1) {if (_negative[0] &amp;&amp; compare(absInts[0], absInts[1]) === '1') {return '-' + bigAdd(absInts, [false, true]);} else if (_negative[1] &amp;&amp; compare(absInts[1], absInts[0]) === '1') {return '-' + bigAdd(absInts, [true, false]);}} else if (_negative[0] + _negative[1] == 2) {// 负 + 负 的 case, 需要特殊处理
+    return '-' + bigAdd(absInts, [false, false]);}
+&nbsp;
+&nbsp;
+  return bigAdd(absInts, _negative);}
+&nbsp;
+&nbsp;
+function bigAdd(absInts, _negative) {
+  var maxLen = Math.max(absInts[0].length, absInts[1].length);
+  var absInt1 = zeroPad(absInts[0], maxLen);
+  var absInt2 = zeroPad(absInts[1], maxLen);
+  var result = (0, _from2.default)({ length: maxLen }).map(function (ept, pos) {
+    var prev = parseInt(absInt1[pos]) * (_negative[0] ? -1 : 1), 
+    next = parseInt(absInt2[pos]) * (_negative[1] ? -1 : 1);
+    return prev + next;});
+&nbsp;
+&nbsp;
+  for (var i = result.length - 1; i &gt; 0; i--) {
+    if (result[i] &lt; 0) {
+      result[i - 1] -= 1;
+      result[i] += 10;} else 
+    if (result[i] &gt;= 10) {
+      result[i - 1] += 1;
+      result[i] -= 10;}}
+&nbsp;
+&nbsp;
+&nbsp;
+  return result.join('').replace(/^0*/, '') || '0';}
+;
+&nbsp;
+/**
+ * 判断是负数
+ */
+function isNegative(n) {
+  n = (n + '').trim();
+  return n[0] === '-';}
+&nbsp;
+&nbsp;
+/**
+ * 返回以str为值, len位长度的字符串数字 前面填充0
+ */
+function zeroPad(str, len) {
+  if (str.length === len) {
+    return str;}
+&nbsp;
+  var strLen = str.length;
+  return (0, _from2.default)({ length: len }).map(function (d, pos) {return pos &lt; len - strLen ? 0 : str[pos - len + strLen];}).join('');}
+&nbsp;
+&nbsp;
+//比大小: 0一样, 1前面大, -1后面大
+function compare(absInt1, absInt2) {
+  if (absInt1 === absInt2) {
+    return '0'; // 绝对值一样, 符号相反, 0
+  } else if (absInt1.length &gt; absInt2.length) {
+      return '1';} else 
+    if (absInt2.length &gt; absInt1.length) {
+      return '-1';} else 
+    {// 两个数一样长
+      for (var i = 0; i &lt; absInt1.length; i++) {
+        if (parseInt(absInt1[i]) &gt; parseInt(absInt2[i])) {
+          return '1';
+<span class="cstat-no" title="statement not covered" >          break;}</span> else 
+        if (parseInt(absInt1[i]) &lt; parseInt(absInt2[i])) {
+          return '-1';
+<span class="cstat-no" title="statement not covered" >          break;}</span>}}}module.exports = exports['default'];</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Mar 06 2016 19:48:59 GMT+0800 (CST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

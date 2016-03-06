@@ -1,6 +1,7 @@
 import mocha from 'mocha';
 import assert from 'assert';
 import add from './index';
+import solution2 from './solution2';
 
 const readyData = [
   // [第一个数, 第二个数, 答案]
@@ -31,10 +32,18 @@ const readyData = [
   [-44444, 321111, 276667]
 ];
 
-describe("BigInt 加法", function() {
+describe("BigInt 加法 常规方法", function() {
   readyData.forEach(d => {
     it(`${d[0]} + ${d[1]} = ${d[2]}`, () => {
       assert.equal(add('' + d[0], '' + d[1]), '' + d[2]);
+    });
+  });
+});
+
+describe("BigInt 加法 Solution2", function() {
+  readyData.forEach(d => {
+    it(`${d[0]} + ${d[1]} = ${d[2]}`, () => {
+      assert.equal(solution2('' + d[0], '' + d[1]), '' + d[2]);
     });
   });
 });
