@@ -4,8 +4,8 @@
   "description": "big int add mini lib",
   "main": "index.js",
   "scripts": {
-    "test": "npm run compile && istanbul cover _mocha dist/test.js",
-    "compile": "rm -rf dist && babel src/ --out-dir dist/ --retain-lines"
+    "test": "npm run compile && ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha dist/test.js",
+    "compile": "rm -rf dist && ./node_modules/.bin/babel src/ --out-dir dist/ --retain-lines"
   },
   "keywords": [
     "bigint"
