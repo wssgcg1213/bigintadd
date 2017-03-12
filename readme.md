@@ -1,5 +1,7 @@
 #大整数相加 demo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wssgcg1213/bigintadd.svg)](https://greenkeeper.io/)
+
 ```bash
 npm i
 npm run test
